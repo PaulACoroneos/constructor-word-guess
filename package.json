@@ -4,7 +4,8 @@
   "description": "a word guess game in node.js",
   "main": "index.js",
   "dependencies": {
-    "inquisitor": "^0.0.4"
+    "inquisitor": "^0.0.4",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {},
   "scripts": {
