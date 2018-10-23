@@ -4,20 +4,22 @@
 let inquirer = require("inquirer");
 let Word = require('./Word.js');
 
-// Create a "Prompt" with a series of questions.
-// inquirer
-//   .prompt([
-//     {
-//       type: "input",
-//       message: "Guess a letter!",
-//       name: "letter-guess"
-//     }
-//   ])
-//   .then(function(inquirerResponse) {
-//     // If the inquirerResponse confirms, we displays the inquirerResponse's username and pokemon from the answers.
-    
-//   });
+//initialize with first word on load
+let test = new Word("hello");
+let guess = true; 
 
-// test code for Letter.js
+//Create a "Prompt" with a series of questions.
+while(guess) {
+  inquirer
+    .prompt([
+      {
+        message: "Guess a letter!",
+        name: "letterguess"
+      }
+    ])
+    .then(function(response) {
+      test.checkChar(response.letterguess).displayWord();
+    });
+}
+
   
- let test = new Word("hello world");
