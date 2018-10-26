@@ -9,11 +9,7 @@ class Letter {
         if(userLetter.toLowerCase() === this.character) {
             this.guessed = true;
            // console.log(this.guessed);
-        }
-        else {
-            this.guessed = false;   //redundant
-           // console.log(this.guessed);
-        }   
+        }  
     }
 
     revealLetter() {
@@ -30,10 +26,10 @@ class Letter {
 }
 
 //test code
-// let test = new Letter("a");
+//  let test = new Letter("a");
 
-// test.checkGuess("a");  
-// test.revealLetter();
+//  console.log(test.checkGuess("b"));  
+//  console.log(test.revealLetter());
 
 module.exports = Letter;
     
